@@ -9,6 +9,6 @@ namespace PokemonTrainerSimulator
     public class Pikachu : ElectricPokemon
     {
         // Constructor for Pikachu that sets the Type to Electric and initializes the base class
-        public Pikachu(string name, int level, List<Attack> attacks) : base(name, level, attacks) { }
+        public Pikachu(int level, List<Attack> attacks) : base("Pikachu", level, attacks) { }
     }
 }
