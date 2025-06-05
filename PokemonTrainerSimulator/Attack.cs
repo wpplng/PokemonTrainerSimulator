@@ -8,10 +8,12 @@ namespace PokemonTrainerSimulator
 {
     public class Attack
     {
+        // Properties for attack name, type, and base power
         public string Name { get; }
         public ElementType Type { get; }
         public int BasePower { get; }
 
+        // Constructor to initialize the attack properties
         public Attack(string name, ElementType type, int basePower)
         {
             Name = name ?? throw new ArgumentNullException(nameof(name));
@@ -19,6 +21,7 @@ namespace PokemonTrainerSimulator
             BasePower = basePower;
         }
 
+        // Method to simulate using the attack
         public void Use(int level)
         {
             int totalPower = BasePower + level;
