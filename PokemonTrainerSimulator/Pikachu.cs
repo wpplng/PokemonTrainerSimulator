@@ -10,5 +10,10 @@ namespace PokemonTrainerSimulator
     {
         // Constructor for Pikachu that sets the Type to Electric and initializes the base class
         public Pikachu(int level, List<Attack> attacks) : base("Pikachu", level, attacks) { }
+
+        public override void Speak()
+        {
+            Console.WriteLine($"{Name} says: Pika!");
+        }
     }
 }

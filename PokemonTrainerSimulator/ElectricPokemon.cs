@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PokemonTrainerSimulator
 {
-    public class ElectricPokemon : Pokemon
+    public abstract class ElectricPokemon : Pokemon
     {
         // Constructor for ElectricPokemon that sets the Type to Electric
         public ElectricPokemon(string name, int level, List<Attack> attacks) : base(name, level, attacks) 

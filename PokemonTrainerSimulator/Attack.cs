@@ -22,7 +22,7 @@ namespace PokemonTrainerSimulator
         }
 
         // Method to simulate using the attack
-        public void Use(int level)
+        public virtual void Use(int level)
         {
             int totalPower = BasePower + level;
             Console.WriteLine($"{Name} hits with total power {totalPower}.");

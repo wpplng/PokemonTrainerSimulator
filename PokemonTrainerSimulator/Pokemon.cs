@@ -24,7 +24,6 @@ namespace PokemonTrainerSimulator
                 _name = value;
             }
         }
-
         public int Level
         {
             get => _level;
@@ -76,11 +75,18 @@ namespace PokemonTrainerSimulator
             }
         }
 
-        // Method to raise the level of the Pokemon
-        public void RaiseLevel()
+        // Method to raise the level of the Pokemon that can be overridden by derived classes
+        public virtual Pokemon RaiseLevel()
         {
             Level++;
             Console.WriteLine($"{Name} leveled up to {Level}!");
+            return this;
+        }
+
+        // Method to simulate speaking, to be overridden by derived classes
+        public virtual void Speak()
+        {
+            Console.WriteLine($"{Name} makes a generic Pokemon sound!");
         }
     }
 }

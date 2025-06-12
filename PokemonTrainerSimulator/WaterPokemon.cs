@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PokemonTrainerSimulator
 {
-    public class WaterPokemon : Pokemon
+    public abstract class WaterPokemon : Pokemon
     {
         // Constructor for WaterPokemon that sets the Type to Water
         public WaterPokemon(string name, int level, List<Attack> attacks) : base(name, level, attacks) 
